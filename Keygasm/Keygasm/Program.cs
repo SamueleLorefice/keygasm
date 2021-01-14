@@ -11,27 +11,28 @@ namespace Keygasm
     {
         public static LowLevelKeyboardListener listener;
 
-        static void _listener_OnKeyPressed(object sender, KeyPressedArgs e)
-        {
-        }
-
-        //
-
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
         static void Main()
         {
-            ServiceBase[] ServicesToRun;
+            //ServiceBase[] ServicesToRun;
             listener = new LowLevelKeyboardListener();
-            listener.OnKeyPressed += _listener_OnKeyPressed;
-
+            KeygasmService service;
             listener.HookKeyboard();
-            ServicesToRun = new ServiceBase[]
+
+            //ServicesToRun = new ServiceBase[]
+            //{
+            service = new KeygasmService();
+            //};
+
+            listener.OnKeyPressed += service.OnKeyPressed;
+            //ServiceBase.Run(ServicesToRun);
+
+            while (true)
             {
-                new KeygasmService()
-            };
-            ServiceBase.Run(ServicesToRun);
+
+            }
         }
     }
 }

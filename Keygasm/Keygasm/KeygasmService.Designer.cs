@@ -1,4 +1,7 @@
 ﻿
+using System;
+using System.Windows.Input;
+
 namespace Keygasm
 {
     partial class KeygasmService
@@ -8,7 +11,10 @@ namespace Keygasm
         /// </summary>
         private System.ComponentModel.IContainer components = null;
 
-
+        public void OnKeyPressed(object sender, KeyPressedArgs e)
+        {
+            e.KeyPressed.ToString();
+        }
 
         /// <summary>
         /// Clean up any resources being used.
@@ -33,7 +39,7 @@ namespace Keygasm
         private void InitializeComponent()
         {
             components = new System.ComponentModel.Container();
-            this.ServiceName = "Service1";
+            this.ServiceName = "KeygasmService";
         }
 
         #endregion
