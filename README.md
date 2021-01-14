@@ -1,18 +1,18 @@
 # Keygasm
 One day a friend talked to me about getting an Ahegao keycap set for their mechanical keyboard.
-Another one said he woudl do that only if his keyboard would emit *\*some noise*\* when any key is pressed.
+Another one said he would do that only if his keyboard would emit *\*some noise*\* when any key is pressed.
 And it was at that moment, that I realized, the world needs something like that.
 
 ## WTF is this?
 Nothing more, nothing less than a windows service that intercepts all of the keys pressed and plays a soundfile associated with it.
 
 ## Does it work yet?
-Nope, but I'm working on it. Windows services are finiky to get right to work.
+Nope, but I'm working on it. Windows services are finiky to get working.
 
 
 ### FAQ
-##### I would have done this in python,it would be much easier
-Go ahead and do it. I don't like python for multiple reasons.
+##### I would have done this in python, it would have been much easier.
+Go ahead and do it. I don't like python for multiple reasons. I'm not going to stop you.
 
 ##### Can I help?
 Sure. Feel free to send a pull request or open an issue.
